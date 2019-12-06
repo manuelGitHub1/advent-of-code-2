@@ -26,7 +26,8 @@ class OpCodeTest {
    private void test( Integer[] input, Integer[] expectedOutput ) {
       LinkedList<Integer> integers = new LinkedList<>();
       integers.addAll(Arrays.asList(input));
-      OpCode.calculateOutput(integers);
+      IntComputer.calculateOutput(integers);
       assert integers.containsAll(Arrays.asList(expectedOutput));
    }
+
 }
